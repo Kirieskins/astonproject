@@ -3,9 +3,9 @@ package org.astonlearning.quiclsortapplication;
 import java.util.Comparator;
 
 /**
- * Класс - сущность автомобиля.
+ * Класс - сущность автомобиля
  * 
- * Для создания экземпляров класса используется {@link Builder}.
+ * Для создания экземпляров класса используется {@link Builder}
  * </p>
  * 
  * @author Мазур Егор
@@ -13,11 +13,11 @@ import java.util.Comparator;
  * @since 2026-06-03
  */
 public class Car implements Comparable<Car> {
-    /** Паименование марки автомобиля. */
+    /** Паименование марки автомобиля */
     private String model;
-    /** Мощность автомобиля в лошадиных силах. */
+    /** Мощность автомобиля в лошадиных силах */
     private int power;
-    /** Год производства автомобиля. */
+    /** Год производства автомобиля */
     private int year;
 
     public Car(int power, String model, int year){
@@ -27,9 +27,9 @@ public class Car implements Comparable<Car> {
     }
 
     /**
-     * Конструктор для инициализации объекта через билдер.
+     * Конструктор для инициализации объекта через билдер
      *
-     * @param builder экземпляр строителя, содержащий параметры автомобиля.
+     * @param builder экземпляр строителя, содержащий параметры автомобиля
      */
     public Car(Builder builder) {
         this.model = builder.model;
@@ -58,7 +58,7 @@ public class Car implements Comparable<Car> {
         return String.format("Car{model='%s', power=%d л.с., year=%d}", model, power, year);
     }
 
-    /** Вложенный класс, для пошагового создания экземпляров класса {@link Car}. */
+    /** Вложенный класс, для пошагового создания экземпляров класса {@link Car} */
     public static class Builder {
         private String model;
         private int power;
@@ -93,7 +93,7 @@ public class Car implements Comparable<Car> {
 
         /**
          * Создает и возвращает готовый объект класса {@link Car}
-         * на основе переданных параметров.
+         * на основе переданных параметров
          *
          * @return новый объект {@link Car}
          */
@@ -107,9 +107,9 @@ public class Car implements Comparable<Car> {
      * 
      * <p>
      * Сравнивает текущий экземпляр класса {@code Car} с указанным объектом на
-     * равенство.
+     * равенство
      * Два объекта класса {@code Car} считаются равными тогда и только тогда,
-     * когда совпадают их мощность, модель и год производства.
+     * когда совпадают их мощность, модель и год производства
      * </p>
      *
      * @param obj объект для сравнения с текущим автомобилем
@@ -140,7 +140,7 @@ public class Car implements Comparable<Car> {
      * Возвращает значение хэш-кода для автомобиля. Хэш-код генерируется
      * на основе всех полей класса (мощность, модель, год производства),
      * что обеспечивает выполнение общего контракта: у равных объектов
-     * по методу {@link #equals(Object)} всегда будут одинаковые хэш-коды.
+     * по методу {@link #equals(Object)} всегда будут одинаковые хэш-коды
      * </p>
      *
      * @return целое число, представляющее хэш-код данного объекта
