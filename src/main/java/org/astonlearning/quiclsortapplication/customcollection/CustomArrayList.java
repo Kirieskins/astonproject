@@ -75,8 +75,7 @@ public class CustomArrayList<T> extends AbstractList<T>{
      * @param index   индекс изменяемого элемента
      * @param element элемент, который будет сохранен в указанной позиции
      * @return старое значение элемента, находившееся на указанной позиции
-     * @throws IndexOutOfBoundsException если индекс выходит за пределы диапазона от
-     *                                   0 до size - 1
+     * @throws IndexOutOfBoundsException если индекс выходит за пределы диапазона
      */
     @Override
     @SuppressWarnings("unchecked")
