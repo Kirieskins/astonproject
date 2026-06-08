@@ -1,5 +1,7 @@
 package org.astonlearning.quiclsortapplication.sorting;
 
+import org.astonlearning.quiclsortapplication.Car;
+
 /*
  Стратегия сортировки автомобилей по умолчанию.
   Использует сравнение, заложенное изначально в метод compareTo класса Car
