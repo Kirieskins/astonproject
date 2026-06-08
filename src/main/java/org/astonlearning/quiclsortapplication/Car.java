@@ -13,7 +13,7 @@ import java.util.Comparator;
  * @since 2026-06-03
  */
 public class Car implements Comparable<Car> {
-    /** Паименование марки автомобиля */
+    /** Наименование марки автомобиля */
     private final String model;
     /** Мощность автомобиля в лошадиных силах */
     private final int power;
