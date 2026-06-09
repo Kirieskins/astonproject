@@ -9,9 +9,9 @@ public class ConsoleOutputTest {
         OutputProvider output = new ConsoleOutput();
 
         List<Car> cars = List.of(
-            new Car(100, "BMW", 2010),
-            new Car(200, "Audi", 2015),
-            new Car(300, "Toyota", 2020)
+            new Car.Builder().setPower(100).setModel("BMW").setProductionYear(2010).build(),
+            new Car.Builder().setPower(200).setModel("Audi").setProductionYear(2015).build(),
+            new Car.Builder().setPower(300).setModel("Toyota").setProductionYear(2020).build()
         );
 
         System.out.println("=== TEST 1: normal list ===");
