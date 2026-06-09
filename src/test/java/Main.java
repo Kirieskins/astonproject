@@ -1,5 +1,6 @@
 import org.astonlearning.quiclsortapplication.Car;
 import org.astonlearning.quiclsortapplication.customcollection.CustomArrayList;
+import org.astonlearning.quiclsortapplication.multithreading.ElementCounter;
 import org.astonlearning.quiclsortapplication.sorting.SortType;
 import org.astonlearning.quiclsortapplication.sorting.SortingManager;
 
@@ -14,6 +15,9 @@ public class Main {
             carsList.add(new Car.Builder().setModel("AUDI").setPower(500).setProductionYear(2011).build());
             carsList.add(new Car.Builder().setModel("BMW").setPower(200).setProductionYear(2020).build());
             carsList.add(new Car.Builder().setModel("NISSAN").setPower(150).setProductionYear(2014).build());
+            carsList.add(new Car.Builder().setModel("ZEEKR").setPower(550).setProductionYear(2021).build());
+            carsList.add(new Car.Builder().setModel("ZEEKR").setPower(550).setProductionYear(2021).build());
+            carsList.add(new Car.Builder().setModel("ZEEKR").setPower(550).setProductionYear(2021).build());
 
             SortingManager manager = new SortingManager();
 
@@ -37,6 +41,10 @@ public class Main {
 
             System.out.println("Сортировка для доп задания 1" + carsList);
 
+            // тест потока
+            System.out.println("\n=================================\n");
+            Car carToFind = new Car.Builder().setModel("ZEEKR").setPower(550).setProductionYear(2021).build();
+          int res = ElementCounter.countElement(carsList, carToFind);
 
         }
     }
